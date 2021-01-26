@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LAYOUT */
+main {
+  position: relative;
+  width: 100rem;
+  height: 60rem;
+  background-color: #d4d4d4;
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+}
+
+.player {
+  flex: 50%;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+/* ELEMENTS */
+#main-title {
+  position: absolute;
+  top: 5.8rem;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 59px;
+  text-align: center;
+  letter-spacing: 0.485em;
+
+  color: #252525;
+}
+
+.name {
+  position: relative;
+  color: #252525;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 29px;
+  letter-spacing: 0.28em;
+  opacity: 0.5;
+}
+
+.score {
+  font-size: 8rem;
+  font-weight: 300;
+  color: transparent;
+  margin-bottom: auto;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 200px;
+  line-height: 244px;
+  letter-spacing: 0.005em;
+  opacity: 0.5;
+
+  -webkit-text-stroke: 3px #252525;
+}
+
+.player--active {
+  background-color: #f7f7f7;
+}
+.player--active .name {
+  font-weight: 800;
+  opacity: 1;
+}
+.player--active .score {
+  font-weight: 800;
+  opacity: 1;
+  -webkit-text-stroke: 0px;
+  color: #252525;
+}
+
+.player--active .current {
+  opacity: 1;
+}
+
+.player--active .progress-back {
+  opacity: 1;
+}
+
+.current {
+  background-color: #252525;
+  border: 3px solid #252525;
+  color: #f7f7f7;
+  width: 65%;
+  padding: 1.65rem;
+  text-align: center;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  transition: all 0.75s;
+  opacity: 0.3;
+}
+
+.current-label {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #f7f7f7;
+}
+
+.current-score {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #252525;
+  background: none;
+  font-family: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  line-height: 22px;
+  transition: all 0.2s;
+
+  background-color: transparent;
+  border: 3px solid #252525;
+
+  padding: 1rem 1.8rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(39, 39, 39, 0.1);
+}
+
+.btn--new {
+  top: 3rem;
+}
+.btn--roll {
+  top: 39.8rem;
+}
+.btn--hold {
+  top: 46.1rem;
+  padding: 1rem 4.6rem;
+}
+
+.btn--white {
+  top: 56.2rem;
+  left: 46.4%;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.5rem 1.3rem;
+  border-right: 0px solid #252525;
+}
+
+.btn--black {
+  top: 56.2rem;
+  left: 53.4%;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.5rem 1.3rem;
+  border-left: 0px solid #252525;
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  background-color: #252525;
+  color: #f7f7f7;
+}
+
+.btn:hover {
+  background-color: #252525;
+  color: #f7f7f7;
+}
+.btn:focus {
+  outline: none;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 18.5rem;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.player--winner {
+  background-color: #37b9f1;
+}
+
+.player--winner .name {
+  font-weight: 700;
+  color: #f7f7f7;
+}
+
+.hidden {
+  display: none;
+}
+
+.progress-back {
+  background-color: #252525;
+  width: 5rem;
+  height: 100%;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  opacity: 0.3;
+}
+
+.progress-bar {
+  background-color: #f7f7f7;
+  width: 5rem;
+  height: 80%;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  transition: 0.2s;
+}
+
+#progress-back--1 {
+  left: 95rem;
+}
+
+#progress-bar--0 {
+  height: 100%;
+}
+
+#progress-bar--1 {
+  height: 100%;
+}
