@@ -1,2 +1,6 @@
-# Dice-Roll-Game
-Simple game about rolling a dice and holding the score until you get a number one. 
+# 🎲 Dice & Roll Game 
+
+This is a re-design of the original project from Jonas Schmedtmann's, called "Pig Game". 
+
+It is a much more minimalistic approach with a few added features like progress bars or theme toggle.
+
