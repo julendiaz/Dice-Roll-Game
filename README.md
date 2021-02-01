@@ -29,7 +29,7 @@ The **rules** are really simple.
 # 🧠 4. Approaches
 
 ### 1. Developing Progress Bars 
-  -[] Create the progress Bars in CSS: 
+  - Create the progress Bars in CSS: 
 ```
 .progress-back {
   background-color: #252525;
@@ -59,7 +59,7 @@ The **rules** are really simple.
   height: 100%;
 }
 ```
-  -[] Change the % of the height property in CSS with DOM inside the Hold Button feature:
+  - Change the % of the height property in CSS with DOM inside the Hold Button feature:
 ```
 // Add progress bars
     document.getElementById('progress-bar--0').style.height = `${
@@ -72,12 +72,12 @@ The **rules** are really simple.
 
 ### 2. Developing the Switch Themes
 
-  -[] Use separate stylesheets to store both dark-theme.css and light-theme.css
-  -[] Link up the default mode on the head of html
+  - Use separate stylesheets to store both dark-theme.css and light-theme.css
+  - Link up the default mode on the head of html
 ´´´
 <link rel="stylesheet" href="light-theme.css" id="theme-link" />
 ´´´
-  -[] Toggle the themes using #theme-link and setAttribute in Javascript DOM 
+  - Toggle the themes using #theme-link and setAttribute in Javascript DOM 
 ´´´
 btnWhite.addEventListener('click', function () {
   // Select the href attribute
@@ -99,5 +99,23 @@ btnBlack.addEventListener('click', function () {
 ´´´
 
   - Source: https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/ 
-# 5. GIF Demo
+# 🎥 5. GIF Demo
+![alt text](https://user-images.githubusercontent.com/66780327/106460095-18901d00-6493-11eb-9ace-00efede79702.gif)
 
+# 💸 6. Attribution 
+
+This project was made possible thanks to the awesome Udemy Course from Jonas Schmedtmann. He is such a good teacher. 
+
+- Link to his Udemy Course: https://www.udemy.com/course/the-complete-javascript-course/ 
+
+Follow him on twitter or subscribe to his mailing list:
+https://twitter.com/jonasschmedtman
+http://codingheroes.io/resources/
+
+# 👨🏽‍💻 7. Feedback
+
+If you liked this project, give it a like! 
+
+I would also appreciate any improvements both on the design or the development part of the code. I am complete beginner so any reviews will surely be of help :).
+
+Thanks for yout time 🙏🏽
