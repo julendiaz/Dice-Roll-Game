@@ -77,7 +77,8 @@ The **rules** are really simple.
 ´´´
 <link rel="stylesheet" href="light-theme.css" id="theme-link" />
 ´´´
-  - Toggle the themes using #theme-link and setAttribute in Javascript DOM 
+  - Toggle the themes using #theme-link and setAttribute in Javascript DOM.
+  
 ´´´
 btnWhite.addEventListener('click', function () {
   // Select the href attribute
@@ -109,6 +110,7 @@ This project was made possible thanks to the awesome Udemy Course from Jonas Sch
 - Link to his Udemy Course: https://www.udemy.com/course/the-complete-javascript-course/ 
 
 Follow him on twitter or subscribe to his mailing list:
+
 https://twitter.com/jonasschmedtman
 http://codingheroes.io/resources/
 
