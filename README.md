@@ -4,3 +4,58 @@ This is a re-design of the original project from Jonas Schmedtmann's, called "Pi
 
 It is a much more minimalistic approach with a few added features like progress bars or theme toggle.
 
+# 🐱‍👤 1. Introduction
+
+While going through the Udemy Online Course of Jonas Schmedtmann, the first project of the curriculum was to create a simple game about scoring points through rolling a dice. 
+
+After following the tutorial and understanding the reason behind every feature, I decided to re-design the concept into a minimal one, while adding a few more features like progress bars and toggle themes.
+
+# 🗺 2. How it works
+
+The rules are really simple. 
+- Each player can roll the dice infinite number of times until you get a 'one'. 
+- If you hold the score that the player has earned during his turn before getting a 'one' on the dice, the player will add that current score to the global one. 
+- Else if the player gets a one, all of the previous points will vanish, and the turn will switch to the other player. 
+- The first player in holding up to 100 points wins. 
+
+# 🐱‍🏍 3. Features
+
+1. Roll the dice to get a random number
+2. Hold the current score to add those points to the global score. 
+3. Progress bars to the sides to visualize the score. 
+4. Toggle buttons to switch between dark and light themes. 
+5. Start a New Game and reset all of the features to starting conditions. 
+
+# 4. Approaches
+
+1. Developing Progress Bars 
+
+```
+.progress-back {
+  background-color: #252525;
+  width: 5rem;
+  height: 100%;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  opacity: 0.3;
+}
+
+.progress-bar {
+  background-color: #f7f7f7;
+  width: 5rem;
+  height: 80%;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  transition: 0.2s;
+}
+
+#progress-back--1 {
+  left: 95rem;
+}
+
+#progress-bar--0 {
+  height: 100%;
+}
+```
