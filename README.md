@@ -74,12 +74,12 @@ The **rules** are really simple.
 
   - Use separate stylesheets to store both dark-theme.css and light-theme.css
   - Link up the default mode on the head of html
-´´´
+```
 <link rel="stylesheet" href="light-theme.css" id="theme-link" />
-´´´
+```
   - Toggle the themes using #theme-link and setAttribute in Javascript DOM.
   
-´´´
+```
 btnWhite.addEventListener('click', function () {
   // Select the href attribute
   theme.setAttribute('href', 'light-theme.css');
@@ -97,7 +97,7 @@ btnBlack.addEventListener('click', function () {
   // Set the darkTheme to false so we can display the dark dices
   darkTheme = true;
 });
-´´´
+```
 
   - Source: https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/ 
 # 🎥 5. GIF Demo
