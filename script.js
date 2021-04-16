@@ -50,9 +50,9 @@ btnRoll.addEventListener('click', function () {
     diceEl.classList.remove('hidden');
 
     if (darkTheme) {
-      diceEl.src = `dice-${dice}.png`;
+      diceEl.src = `dice-images/dice-${dice}.png`;
     } else {
-      diceEl.src = `light-${dice}.png`;
+      diceEl.src = `dice-images/light-${dice}.png`;
     }
 
     // 3. Check for rolled 1: if true,
@@ -124,7 +124,7 @@ btnNew.addEventListener('click', function () {
 
 btnWhite.addEventListener('click', function () {
   // Select the href attribute
-  theme.setAttribute('href', 'light-theme.css');
+  theme.setAttribute('href', 'css/light-theme.css');
   // Hide the dice when the switch happens
   diceEl.classList.add('hidden');
   // Set the darkTheme to false so we can display the dark dices
@@ -133,7 +133,7 @@ btnWhite.addEventListener('click', function () {
 
 btnBlack.addEventListener('click', function () {
   // Select the href attribute
-  theme.setAttribute('href', 'dark-theme.css');
+  theme.setAttribute('href', 'css/dark-theme.css');
   // Hide the dice when the switch happens
   diceEl.classList.add('hidden');
   // Set the darkTheme to false so we can display the dark dices
